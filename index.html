@@ -1,21 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Kakao Maps Example</title>
-  <!-- Kakao Maps API 스크립트 로드 -->
-  <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=9a273153df44acda9bb3661c1fab8720"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오 API (지도)</title>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- sylesheet -->
+    <script src="kakaoMpa.js"></script>
 </head>
 <body>
-  <div id="map" style="width:500px;height:400px;"></div>
-  <script>
-    // Kakao Maps API 사용 코드
-    var mapContainer = document.getElementById('map');
-    var mapOption = {
-      center: new kakao.maps.LatLng(37.5665, 126.9780), // 중심 좌표
-      level: 3 // 확대 수준
-    };
-    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도 생성
-  </script>
+    <div id="map" style="width:600px; height:600px;">
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9a273153df44acda9bb3661c1fab8720"></script>
+    </div>
 </body>
 </html>
